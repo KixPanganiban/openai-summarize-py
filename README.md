@@ -7,7 +7,7 @@ OpenAI Summarize is a Python package that generates summaries of text using Open
 OpenAI Summarize can be installed from PyPI using pip. Simply run:
 
 ```
-pip install openai_summarize
+pip install openai-summarize
 ```
 
 Alternatively, you can install OpenAI Summarize from Git by cloning the repository and running setup.py:
