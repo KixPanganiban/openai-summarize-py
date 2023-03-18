@@ -1,3 +1,7 @@
 venv
+venv-test
 *.pyc
 __pycache__
+openai_summarize.egg-info
+build
+dist
