@@ -23,7 +23,7 @@ python setup.py install
 ```python
 import openai_summarize
 
-openai_summarizer = openai_summarize.OpenAISummarize("your_openai_token")
+openai_summarizer = openai_summarize.OpenAISummarize("your_openai_key")
 
 text = "This is a long piece of text that needs to be summarized."
 summary = openai_summarizer.summarize_text(text)
@@ -38,7 +38,7 @@ Here's an example of how to use OpenAI Summarize to summarize a long piece of te
 ```python
 import openai_summarize
 
-openai_summarizer = openai_summarize.OpenAISummarize("your_openai_token")
+openai_summarizer = openai_summarize.OpenAISummarize("your_openai_key")
 
 text = """The COVID-19 pandemic, also known as the coronavirus pandemic, is an ongoing pandemic of coronavirus disease 2019 (COVID-19), caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The virus was first identified in December 2019 in Wuhan, China. The World Health Organization declared a Public Health Emergency of International Concern regarding COVID-19 on 30 January 2020, and later declared a pandemic on 11 March 2020. As of 18 March 2023, more than 472 million cases have been confirmed, with more than 6.5 million deaths attributed to COVID-19, making it one of the deadliest pandemics in history.
 
@@ -62,7 +62,7 @@ Here's another example of how to use OpenAI Summarize to summarize a news articl
 from newspaper3k import Article
 import openai_summarize
 
-openai_summarizer = openai_summarize.OpenAISummarize("your_openai_token")
+openai_summarizer = openai_summarize.OpenAISummarize("your_openai_key")
 
 article = Article("https://www.nytimes.com/2023/03/18/world/europe/russia-nato-ukraine.html")
 article.download()
@@ -75,13 +75,13 @@ print(summary)
 
 ### `OpenAISummarize` class
 
-#### `__init__(self, openai_token)`
+#### `__init__(self, openai_key)`
 
 Creates an instance of the `OpenAISummarize` class.
 
 ##### Arguments
 
-- `openai_token` (str): Your OpenAI API token.
+- `openai_key` (str): Your OpenAI API token.
 
 #### `count_tokens(self, text)`
 
