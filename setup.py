@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="openai_summarize",
-    version="0.1",
+    version="0.1.1",
     description="Summarize long text using OpenAI's text-davinci-003 model.",
     author="Kix Panganiban",
     author_email="kixpanganiban@protonmail.com",

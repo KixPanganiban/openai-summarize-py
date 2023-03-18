@@ -5,10 +5,10 @@ import tiktoken
 
 
 class OpenAISummarize(object):
-    openai_token = ""
+    openai_key = ""
 
-    def __init__(self, openai_token) -> None:
-        self.openai_token = openai_token
+    def __init__(self, openai_key) -> None:
+        self.openai_key = openai_key
 
 
     def count_tokens(self, text):
@@ -70,7 +70,7 @@ class OpenAISummarize(object):
         Returns:
             str: The generated summary of the text.
         """
-        openai.api_key = os.environ["OPENAI_KEY"]
+        openai.api_key = self.openai_key
         model_engine = "text-davinci-003"
         prompt_template = "{}\n\nTl;dr (max 200 words)"
 
