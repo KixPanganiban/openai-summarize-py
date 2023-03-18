@@ -5,3 +5,4 @@ __pycache__
 openai_summarize.egg-info
 build
 dist
+.vscode
